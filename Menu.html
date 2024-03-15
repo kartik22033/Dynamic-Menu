@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dynamic Menu</title>
+<style>
+.main-menu {
+  display: flex;
+  justify-content: flex-start;
+  overflow: hidden;
+}
+
+.main-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-menu li {
+  display: inline-block;
+}
+
+.hidden {
+  display: none;
+}
+
+</style>
+</head>
+<body>
+
+<nav class="main-menu">
+  <ul id="main-menu-list">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Services</a></li>
+    <li><a href="#">Portfolio</a></li>
+    <li><a href="#">Blog</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+  <ul id="more-menu-list" class="hidden"></ul>
+</nav>
+
+<script src="script.js"></script>
+</body>
+</html>
